@@ -31,14 +31,14 @@ Display the original, lower contrast, and higher contrast images.
 Split the image (boy.jpg) into B, G, R components and display the channels
 
 ## Program Developed By:
-- **Name:** [Your Name Here]  
-- **Register Number:** [Your Register Number Here]
+- **Name:** manorajapriyan.l.e 
+- **Register Number:** 212225040227
 
   ### Ex. No. 01
 
-#### 1. Read the image ('Eagle_in_Flight.jpg') using OpenCV imread() as a grayscale image.
+#### 1. Read the image ('1.jpg') using OpenCV imread() as a grayscale image.
 ```python
-# YOUR CODE HERE
+img = cv2.imread('1.jpg', cv2.IMREAD_COLOR)
 ```
 
 #### 2. Print the image width, height & Channel.
@@ -48,12 +48,15 @@ Split the image (boy.jpg) into B, G, R components and display the channels
 
 #### 3. Display the image using matplotlib imshow().
 ```python
-# YOUR CODE HERE
+plt.imshow(img_rgb, cmap='viridis')  # You can change 'viridis' to another cmap or use None for RGB images
+plt.title("Original Image")
+plt.axis('off')  # Removes axis ticks and labels
+plt.show()
 ```
 
 #### 4. Save the image as a PNG file using OpenCV imwrite().
 ```python
-# YOUR CODE HERE
+
 ```
 
 #### 5. Read the saved image above as a color image using cv2.cvtColor().
